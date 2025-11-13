@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    width: 1920px;
+    max-width: 100%;
+    height: 80px;
+    background-color: #92816F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 150px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.izd {
+    color: #AFC1CC;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 2px solid #AFC1CC;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #D2C2B2;
+    transform: translateY(-2px);
+}
+
+.contact-info {
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 0;
+}
+
+.contact-info img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer {
+    width: 1920px;
+    max-width: 100%;
+    background-color: #92816F;
+    color: white;
+    padding: 40px 50px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: scale(1.1);
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-address {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-hours {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 1200px) {
+    .header {
+        padding: 0 30px;
+    }
+    
+    .nav-menu {
+        gap: 25px;
+    }
+    
+    .carousel {
+        height: 500px;
+    }
+    
+    .slide-content {
+        padding: 0 50px;
+    }
+    
+    .title {
+        font-size: 36px;
+    }
+    
+    .subtitle {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .logo-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .izd {
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        border-top: 2px solid white;
+        padding-top: 10px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        padding: 30px 30px 15px;
+    }
+    
+    .footer-container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 25px 20px 15px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    .footer-left {
+        align-items: center;
+    }
+    
+    .footer-right {
+        text-align: center;
+    }
+    
+    .footer-address,
+    .footer-hours {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px 10px;
+    }
+    
+    .footer-logo img {
+        width: 100px;
+    }
+    
+    .social-link img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .footer-address,
+    .footer-hours {
+        font-size: 14px;
+    }
+    
+    .copyright {
+        font-size: 13px;
+    }
+}
